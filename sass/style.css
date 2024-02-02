@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.sec1 > .content > .popup {
+  border: 2px solid white;
+}
+
+:root {
+  font-size: 5px;
+}
+
+.sec1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sec1 > .box {
+  width: 30%;
+  height: 100px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec1 > .box > a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 2px solid white;
+  padding: 10px 5px;
+  border-radius: 10px;
+  font-size: 5rem;
+  transition: 1s;
+}
+.sec1 > .box > a:hover {
+  background-color: rgb(5, 199, 73);
+  border: 2px solid rgb(5, 199, 73);
+}
+.sec1 > .content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(83, 79, 79, 0.822);
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  z-index: 999;
+}
+.sec1 > .content:target {
+  visibility: visible;
+  opacity: 1;
+}
+.sec1 > .content > .popup {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  position: fixed;
+  top: 150px;
+  left: 630px;
+  background-color: rgb(240, 235, 235);
+  z-index: 100;
+  transition: 1s;
+  transition-timing-function: ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sec1 > .content > .popup:hover > .pop1 > div {
+  margin-left: 81%;
+  transform: translateX(-81%);
+}
+.sec1 > .content > .popup:hover {
+  width: 450px;
+}
+.sec1 > .content > .popup > .pop1 {
+  width: 100%;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+}
+.sec1 > .content > .popup > .pop1 > h2 {
+  font-size: 6rem;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+.sec1 > .content > .popup > .pop1 > a {
+  font-size: 5rem;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  position: absolute;
+  font-family: "Times New Roman", Times, serif;
+  top: 0;
+  right: 0;
+  padding: 10px 10px;
+  transition: 1s;
+}
+.sec1 > .content > .popup > .pop1 > a:hover {
+  color: green;
+}
+.sec1 > .content > .popup > .pop1 > div {
+  transition-duration: 2s;
+  transition-property: margin-left;
+}
+.sec1 > .content > .popup > .pop1 > div > h5 {
+  font-size: 3rem;
+  color: black;
+  padding: 0px 5px;
+  line-height: 25px;
+  padding-left: 10px;
+  margin-left: -330%;
+  text-transform: capitalize;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 5vw;
+  padding: 8px 5px;
+  background-color: rgba(255, 166, 0, 0.793);
+  border-radius: 20px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 30px;
+  left: 235px;
+  cursor: pointer;
+  transition: all 1s;
+}
+h1:hover {
+  color: orangered;
+  background-color: rgba(255, 255, 255, 0.428);
+}/*# sourceMappingURL=style.css.map */
